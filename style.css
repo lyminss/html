@@ -6,6 +6,13 @@ body{
     font-size: 14px;
     line-height: 1.15;
     color: #111;
+    overflow: auto;
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+    border: none;
+    
 }
 #wrapper{
     max-width: 1170px;
@@ -13,7 +20,7 @@ body{
 }
 .headline{
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 h3{
     font-size: 18px;
@@ -32,7 +39,7 @@ ul.products{
 }
 ul.products li {
     flex-basis: 25%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
