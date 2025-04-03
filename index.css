@@ -4,13 +4,27 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Ẩn thanh cuộn trong tất cả các trình duyệt hỗ trợ Webkit (Chrome, Safari, Edge)
+body {
+    overflow: scroll; /* Bật tính năng cuộn */
+/* } */
+
+/* body::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn */
+/* } */ 
+
+/* Với Firefox */
+/* html {
+    scrollbar-width: none; Ẩn thanh cuộn trên Firefox */
+/* } */ 
+
 header{
     display: flex;
     justify-content: space-between;
     padding: 12px 20px;
     height: 70px;
     align-items: center;
-    background-color: rgba(99, 205, 218,1.0);
+    background-color: rgba(223, 230, 233,1.0);
     max-width: 100%;
 }
 li{
@@ -24,12 +38,15 @@ a{
     flex: 1;
 }
 .menu{
-    flex: 3;
+    flex: 2;
     display: flex;
     justify-content: center;
 }
 .menu li {
     padding: 15px 20px;
+}
+.menu li:hover{
+    background-color: aliceblue;
 }
 .menu li a {
     font-size: 20px;
@@ -59,7 +76,7 @@ a{
     filter: blur(0); /* Hết mờ */
 }
 .other{
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: space-between;
 }
@@ -73,10 +90,39 @@ a{
 .other > li:first-child input{
     width: 100%;
     border: none;
-    opacity: 0.3;
     border-bottom: 1px solid black;
+    outline: none;
+    background-color: rgba(223, 230, 233,1.0);
 }
 .other > li:first-child i{
     position: absolute;
-    right: 14px;
+    right: 2px;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+.ss-item{
+    align-items: center;
+    flex-basis: 25%;
+    padding: 20px 20px;
+}
+.ss-img img{
+    width: 100%;
+}
+.ss-info{
+    text-align: center;
+}
+.ss-name{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.ss-number{
+    color: #888;
 }
