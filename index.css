@@ -45,9 +45,6 @@ a{
 .menu li {
     padding: 15px 20px;
 }
-.menu li:hover{
-    background-color: aliceblue;
-}
 .menu li a {
     font-size: 20px;
     font-weight: bold;
@@ -111,6 +108,10 @@ a{
     align-items: center;
     flex-basis: 25%;
     padding: 20px 20px;
+}
+.ss-item:hover{
+    transform: scale(1.15);
+    transition: transform 0.25s ease-in-out;
 }
 .ss-img img{
     width: 100%;
